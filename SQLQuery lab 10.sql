@@ -1,4 +1,4 @@
--- Написать триггеры (before, after, instead of DML) для любой таблицы в базе данных и проверить эффекты работы
+-- РќР°РїРёСЃР°С‚СЊ С‚СЂРёРіРіРµСЂС‹ (before, after, instead of DML) РґР»СЏ Р»СЋР±РѕР№ С‚Р°Р±Р»РёС†С‹ РІ Р±Р°Р·Рµ РґР°РЅРЅС‹С… Рё РїСЂРѕРІРµСЂРёС‚СЊ СЌС„С„РµРєС‚С‹ СЂР°Р±РѕС‚С‹
 
 --CREATE TRIGGER instead_of_update_employee
 --ON student
@@ -15,7 +15,7 @@
 --AFTER UPDATE
 --AS
 --BEGIN
--- Вставляем измененные данные в таблицу лога.
+-- Г‚Г±ГІГ ГўГ«ГїГҐГ¬ ГЁГ§Г¬ГҐГ­ГҐГ­Г­Г»ГҐ Г¤Г Г­Г­Г»ГҐ Гў ГІГ ГЎГ«ГЁГ¶Гі Г«Г®ГЈГ .
 --INSERT INTO pol(id_pol, pol)
 --SELECT deleted.id_pol, deleted.pol
 --FROM deleted JOIN inserted ON deleted.id_pol = inserted.id_pol;
